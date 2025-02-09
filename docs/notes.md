@@ -7,7 +7,7 @@ author: ['DONOVAN, Alan A.A. KERNIGHAN, Brian W.']
 
 # 01-tutorial
 
-Use of `asdf` with `'go1.8.7`
+Use of `asdf` with `go1.8.7`
 
 Instalation, attr, set global 1.8.7, config GOPATH
 
@@ -27,7 +27,7 @@ $GOPATH/bin/echo1
 
 `go build -v -work -x *.go`
 
-**review of slices like `Args[:]`'**
+**review of slices like `Args[:]`**
 
 Benchmark in dir *08* using `go test =v bench=.`
 
