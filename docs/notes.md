@@ -23,7 +23,6 @@ Use of `go get`
 go get gopl.io/ch1/echo1
 
 $GOPATH/bin/echo1
-
 ```
 **compile**
 
@@ -49,4 +48,23 @@ available.*
 **review of slices like `Args[:]`**
 
 Benchmark in dir *08* using `go test =v bench=.`
+
+
+New version of Go, use example below instead `go get`
+
+
+```sh
+go install gopl.io/ch1/echo1@latest
+
+$GOPATH/bin/echo1
+```
+
+On program *dup3* use `./12-dup3 test.txt`
+
+On program *lissajous* use `go run 13-lissajous.go > out.gif`
+
+On program *fetch* use `go run 14-fetch.go
+https://gopl.io https://iraamaro.srht.site/posts`
+
+
 
