@@ -32,14 +32,14 @@ $GOPATH/bin/echo1
 
 `go help run`
 
-*By default, 'go run' runs the compiled binary directly:
-'a.out arguments...'.
-If the -exec flag is given, 'go run' invokes the binary using xprog:
-'xprog a.out arguments...'.
+*By default, `go run` runs the compiled binary directly:
+`a.out arguments...`.
+If the -exec flag is given, `go run` invokes the binary using xprog:
+`xprog a.out arguments...`.
 If the -exec flag is not given, GOOS or GOARCH is different from the
-system default, and a program named go_$GOOS_$GOARCH_exec can be found
-on the current search path, 'go run' invokes the binary using that program,
-for example 'go_js_wasm_exec a.out arguments...'. This allows execution of
+system default, and a program named go_\$GOOS_\$GOARCH_exec can be found
+on the current search path, `go run` invokes the binary using that program,
+for example `go_js_wasm_exec a.out arguments...`. This allows execution of
 cross-compiled programs when a simulator or other execution method is
 available.*
 
@@ -47,7 +47,13 @@ available.*
 
 **review of slices like `Args[:]`**
 
-Benchmark in dir *08* using `go test =v bench=.`
+[como-fazer-benchmark-do-seu-codigo](https://archive.is/LpIOU)
+
+Benchmark in dir *08* using:
+
+- `go test -v -bench=. 08-lab2_test.go`
+
+- `go test -v -bench=. -cpu=1 -benchtime=3s -count 3 08-lab2_test.go`
 
 
 New version of Go, use example below instead `go get`
@@ -66,5 +72,10 @@ On program *lissajous* use `go run 13-lissajous.go > out.gif`
 On program *fetch* use `go run 14-fetch.go
 https://gopl.io https://iraamaro.srht.site/posts`
 
+
+On program *fetchall* use `./15-fetchall https://golang.org
+http://gopl.io https://godoc.org https://yandex.com
+https://duckduckgo.com https://amazon.com https://sr.ht
+https://iraamaro.srht.site`
 
 
